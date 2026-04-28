@@ -3,67 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servixa Home – सेवा • सुरक्षा • समृद्धि</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Rajdhani:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <title>Servixa Home – Professional Services in Navi Mumbai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="ganesh-intro">
-        <div class="ganesh-glow"></div>
-        <div class="ganesh-img-wrap">
-            <img src="https://i.ibb.co/3p1zG4D/ganesh-ultra-clean.png" alt="Ganesh ji" class="clean-ganesh-img">
-        </div>
-        <div class="ganesh-text">
-            <div class="om-text">ॐ</div>
-            <div class="ganesh-subtitle">श्री गणेशाय नमः</div>
+        <div class="intro-aura"></div>
+        <div class="intro-content">
+            <div class="om-symbol">ॐ</div>
+            <div class="shlok">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।</div>
+            <div class="mantra">॥ श्री गणेशाय नमः ॥</div>
         </div>
     </div>
 
     <div id="main-site">
-        <nav class="navbar">
-            <a href="#" class="nav-logo">
-                <img src="1000228651.png" alt="Servixa Logo">
-                <div class="nav-brand-text">
-                    <span class="brand-main">SERVIXA</span>
-                    <span class="brand-sub">HOME SERVICES</span>
-                </div>
-            </a>
-            <div class="nav-contact-top">
-                <a href="tel:+918779694303" class="call-btn">📞 8779694303</a>
+        <header class="navbar" id="main-nav">
+            <div class="container flex-nav">
+                <a href="#" class="logo-area">
+                    <img src="Logo.png" alt="Servixa Logo">
+                    <div class="brand">
+                        <span class="m-title">SERVIXA</span>
+                        <span class="s-title">HOME SERVICES</span>
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="cta-nav">Get Expert Now</a></li>
+                </ul>
             </div>
-        </nav>
+        </header>
 
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="shlok-badge">॥ सेवा • सुरक्षा • समृद्धि ॥</div>
-                    <h1>Home Services <span class="text-gold">Expert</span></h1>
-                    <p class="hero-desc">Expert repairs for your home in <b>Navi Mumbai</b>. Reliable, Fast, and Professional.</p>
-                    
-                    <div class="services-list">
-                        <span>❄️ AC</span>
-                        <span>🧺 Washing Machine</span>
-                        <span>🪚 Carpenter</span>
-                        <span>🔧 Plumbing</span>
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="container grid-2">
+                    <div class="hero-text-block">
+                        <span class="badge">Professional • Reliable • Quick</span>
+                        <h1>Navi Mumbai's Most <span class="gold-gradient">Trusted</span> Service Expert</h1>
+                        <p>Specialized repair and maintenance for AC, Washing Machines, and more. Quality guaranteed at your doorstep.</p>
+                        <div class="hero-actions">
+                            <a href="tel:+918779694303" class="btn-main">📞 Call 8779694303</a>
+                            <a href="https://wa.me/918779694303" class="btn-wa">WhatsApp Now</a>
+                        </div>
                     </div>
-
-                    <div class="hero-btns">
-                        <a href="https://wa.me/918779694303" class="btn-primary">Book on WhatsApp</a>
-                        <a href="mailto:home.servixa@gmail.com" class="btn-secondary">Email Us</a>
-                    </div>
-                </div>
-
-                <div class="hero-visual">
-                    <div class="main-logo-display">
-                        <img src="1000228651.png" alt="Servixa Logo Large">
+                    <div class="hero-image-block">
+                        <div class="floating-logo">
+                            <img src="Logo.png" alt="Servixa Branding">
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="services" class="services-section">
+                <div class="container">
+                    <h2 class="section-title">Hamari <span class="gold-text">Services</span></h2>
+                    <div class="services-wrapper">
+                        <div class="s-card">
+                            <div class="s-icon">❄️</div>
+                            <h3>AC Service</h3>
+                            <p>Installation, Gas Refilling, and Complete Repairing.</p>
+                        </div>
+                        <div class="s-card">
+                            <div class="s-icon">🧺</div>
+                            <h3>Washing Machine</h3>
+                            <p>Front Load & Top Load specialized technician.</p>
+                        </div>
+                        <div class="s-card">
+                            <div class="s-icon">🔧</div>
+                            <h3>Plumbing</h3>
+                            <p>All types of leakage and bathroom fittings.</p>
+                        </div>
+                        <div class="s-card">
+                            <div class="s-icon">🪚</div>
+                            <h3>Carpenter</h3>
+                            <p>Modern furniture repair and custom woodwork.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Servixa Home. Designed for Excellence.</p>
+                <p>📍 Navi Mumbai | ✉️ home.servixa@gmail.com</p>
             </div>
-        </section>
+        </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
+                                </html>
+    
