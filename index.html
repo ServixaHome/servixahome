@@ -3,382 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servixa Home | Professional Home Services in Navi Mumbai</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Servixa Home | Best Home Services in Navi Mumbai | AC, Plumbing & More</title>
+    <meta name="description" content="Servixa Home provides professional AC repair, washing machine service, plumbing, and electrical works in Kopar Khairane & Navi Mumbai. One Call Solution for all home needs.">
+    <meta name="keywords" content="AC Repair Navi Mumbai, Home Services Kopar Khairane, Washing Machine Repair, Plumber in Navi Mumbai, Servixa Home">
+    <meta name="author" content="Servixa Home">
+    
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* ========================================
-        PREMIUM CSS ARCHITECTURE - SERVIXA HOME
-        Theme: Navy Blue & Gold (Logo Based)
-        ========================================
-        */
-        :root {
-            --primary: #004289;    /* Logo Deep Blue */
-            --accent: #f5a623;     /* Logo Wrench Gold */
-            --dark-navy: #002d5d;
-            --white: #ffffff;
-            --bg-light: #f4f8fb;
-            --text-dark: #2d3436;
-            --text-muted: #636e72;
-            --border-color: #dfe6e9;
-            --success: #27ae60;
-            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-
-        /* Reset & Base */
-        * { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
-        html { scroll-behavior: smooth; overflow-x: hidden; }
-        body { font-family: 'Poppins', sans-serif; background-color: var(--white); color: var(--text-dark); line-height: 1.7; }
-
-        /* Custom Selection & Scrollbar */
-        ::selection { background: var(--primary); color: var(--white); }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
-
-        /* Reusable Components */
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
-        .section-padding { padding: 100px 0; }
-        .btn { 
-            display: inline-flex; align-items: center; justify-content: center; 
-            padding: 16px 35px; border-radius: 5px; font-weight: 700; 
-            text-transform: uppercase; text-decoration: none; letter-spacing: 1px; 
-            transition: var(--transition); cursor: pointer; border: none; font-size: 14px;
-        }
-        .btn-gold { background: var(--accent); color: var(--dark-navy); }
-        .btn-gold:hover { background: var(--white); transform: translateY(-5px); box-shadow: 0 10px 25px rgba(245,166,35,0.4); }
-
-        /* --- HEADER & NAVIGATION (Line 100+) --- */
-        header { 
-            background: var(--white); height: 100px; display: flex; 
-            align-items: center; position: fixed; top: 0; width: 100%; 
-            z-index: 2000; box-shadow: 0 2px 20px rgba(0,0,0,0.05); 
-            border-bottom: 4px solid var(--accent);
-        }
-        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-        
-        .logo-container { display: flex; align-items: center; gap: 15px; }
-        .logo-container img { height: 75px; object-fit: contain; }
-        .brand-box { display: flex; flex-direction: column; }
-        .brand-name { 
-            font-family: 'Montserrat', sans-serif; font-size: 30px; 
-            font-weight: 900; color: var(--primary); letter-spacing: -1px; 
-            display: flex; align-items: center; line-height: 1;
-        }
-        .wrench-icon { color: var(--accent); margin: 0 2px; font-size: 24px; }
-        .brand-sub { 
-            font-size: 12px; font-weight: 700; color: var(--dark-navy); 
-            letter-spacing: 4px; text-transform: uppercase; margin-top: 2px;
-            border-top: 2px solid var(--primary); display: inline-block;
-        }
-
-        nav ul { display: flex; list-style: none; gap: 30px; }
-        nav ul li a { 
-            text-decoration: none; color: var(--primary); font-weight: 600; 
-            font-size: 14px; text-transform: uppercase; position: relative;
-        }
-        nav ul li a::after { 
-            content: ''; position: absolute; bottom: -5px; left: 0; 
-            width: 0; height: 2px; background: var(--accent); transition: 0.3s;
-        }
-        nav ul li a:hover::after { width: 100%; }
-
-        /* --- HERO SECTION (Line 180+) --- */
-        .hero { 
-            margin-top: 100px; height: 85vh; 
-            background: linear-gradient(45deg, rgba(0,66,137,0.92), rgba(0,45,93,0.8)), 
-                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070');
-            background-size: cover; background-position: center; 
-            display: flex; align-items: center; position: relative; color: var(--white);
-        }
-        .hero-text { max-width: 800px; }
-        .hero-text h1 { 
-            font-family: 'Montserrat', sans-serif; font-size: clamp(40px, 6vw, 75px); 
-            font-weight: 900; line-height: 1.1; margin-bottom: 25px; 
-            text-transform: uppercase; 
-        }
-        .hero-text h1 span { color: var(--accent); }
-        .hero-text p { 
-            font-size: 20px; margin-bottom: 40px; font-weight: 300; 
-            opacity: 0.9; border-left: 4px solid var(--accent); padding-left: 20px;
-        }
-        .hero-btns { display: flex; gap: 20px; flex-wrap: wrap; }
-
-        /* --- STATS STRIP (Line 240+) --- */
-        .stats-bar { background: var(--dark-navy); padding: 40px 0; color: var(--white); }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; }
-        .stat-item h3 { font-size: 35px; color: var(--accent); font-family: 'Montserrat', sans-serif; }
-        .stat-item p { font-size: 14px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
-
-        /* --- DETAILED SERVICES (Line 300+) --- */
-        .section-title { text-align: center; margin-bottom: 70px; }
-        .section-title h2 { 
-            font-family: 'Montserrat', sans-serif; font-size: 42px; 
-            color: var(--primary); text-transform: uppercase; position: relative;
-            display: inline-block; padding-bottom: 15px;
-        }
-        .section-title h2::after { 
-            content: ''; position: absolute; bottom: 0; left: 50%; 
-            transform: translateX(-50%); width: 80px; height: 5px; background: var(--accent); 
-        }
-
-        .services-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
-        .service-card { 
-            background: var(--bg-light); border-radius: 15px; padding: 50px 30px; 
-            transition: var(--transition); border: 1px solid #eee; text-align: left;
-            position: relative; overflow: hidden;
-        }
-        .service-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
-            background: var(--primary); transition: 0.3s; transform: scaleX(0);
-        }
-        .service-card:hover::before { transform: scaleX(1); background: var(--accent); }
-        .service-card:hover { transform: translateY(-15px); background: var(--white); box-shadow: 0 25px 50px rgba(0,0,0,0.06); }
-        
-        .s-icon { 
-            width: 70px; height: 70px; background: var(--white); border-radius: 12px;
-            display: flex; align-items: center; justify-content: center; 
-            font-size: 30px; color: var(--primary); margin-bottom: 25px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-        .service-card h3 { font-size: 22px; color: var(--dark-navy); margin-bottom: 15px; font-weight: 700; }
-        .service-card p { color: var(--text-muted); font-size: 15px; margin-bottom: 20px; }
-        .service-list { list-style: none; }
-        .service-list li { font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
-        .service-list li i { color: var(--success); font-size: 12px; }
-
-        /* --- WORK PROCESS (Line 420+) --- */
-        .process { background: var(--bg-light); }
-        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; position: relative; }
-        .process-item { text-align: center; position: relative; z-index: 1; }
-        .step-num { 
-            width: 60px; height: 60px; background: var(--primary); color: var(--white); 
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            font-size: 24px; font-weight: 800; margin: 0 auto 20px; border: 5px solid var(--white);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .process-item h4 { margin-bottom: 10px; color: var(--primary); text-transform: uppercase; }
-
-        /* --- TESTIMONIALS (Line 500+) --- */
-        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .testi-card { background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; }
-        .user-info { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-        .user-img { width: 50px; height: 50px; background: #ddd; border-radius: 50%; }
-        .stars { color: var(--accent); font-size: 13px; margin-bottom: 10px; }
-
-        /* --- CONTACT & FOOTER (Line 600+) --- */
-        footer { background: var(--dark-navy); color: var(--white); padding: 100px 0 30px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 60px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 60px; }
-        .footer-about p { opacity: 0.7; margin-top: 20px; font-size: 15px; }
-        .footer-links h4, .footer-contact h4 { font-family: 'Montserrat', sans-serif; color: var(--accent); margin-bottom: 25px; text-transform: uppercase; }
-        .footer-links ul { list-style: none; }
-        .footer-links ul li { margin-bottom: 15px; }
-        .footer-links ul li a { color: var(--white); text-decoration: none; opacity: 0.7; transition: 0.3s; font-size: 14px; }
-        .footer-links ul li a:hover { opacity: 1; color: var(--accent); padding-left: 10px; }
-        
-        .contact-item { display: flex; gap: 15px; margin-bottom: 20px; }
-        .contact-item i { color: var(--accent); font-size: 20px; }
-        .contact-item span { opacity: 0.8; font-size: 14px; }
-
-        .tagline-hindi { text-align: center; font-size: 28px; color: var(--accent); font-weight: 700; margin: 50px 0; letter-spacing: 2px; }
-        .copyright { text-align: center; opacity: 0.4; font-size: 12px; margin-top: 40px; }
-
-        /* Responsive Fixes */
-        @media (max-width: 992px) {
-            .hero-text h1 { font-size: 50px; }
-            header { height: 85px; }
-            .logo-container img { height: 60px; }
-        }
-        @media (max-width: 768px) {
-            nav { display: none; }
-            .hero { text-align: center; height: auto; padding: 100px 0; }
-            .hero-text p { border-left: none; padding-left: 0; }
-            .hero-btns { justify-content: center; }
-            .section-title h2 { font-size: 32px; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="container nav-wrapper">
-            <div class="logo-container">
-                <img src="Logo.png" alt="Servixa Home Logo">
-                <div class="brand-box">
-                    <div class="brand-name">SERVIX<span class="wrench-icon"><i class="fas fa-wrench"></i></span>A</div>
-                    <div class="brand-sub">HOME</div>
-                </div>
-            </div>
+        <div class="container nav-flex">
+            <a href="index.html" class="logo-box">
+                <img src="Logo.png" alt="Servixa Home Logo - Best Home Services">
+                <div class="brand-name">SERVIX<span class="wrench-x"><i class="fas fa-wrench"></i></span>A <span style="font-size: 14px; display: block; border-top: 2px solid var(--primary); letter-spacing: 4px;">HOME</span></div>
+            </a>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#process">Work Flow</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ac-repair.html">AC Repair</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="tel:8779694303" class="btn btn-gold"><i class="fas fa-phone-alt"></i> 8779694303</a>
+            <div class="header-cta">
+                <a href="tel:8779694303" class="btn-gold"><i class="fas fa-phone-alt"></i> 8779694303</a>
+            </div>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h1>TRUSTED <span>HOME SERVICES</span> AT YOUR DOORSTEP</h1>
-                <p>One Call Solution for AC Repair, Washing Machine, Plumbing, Carpenter & Electrical works in Kopar Khairane & Navi Mumbai.</p>
+    <section class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">ONE CALL SOLUTION FOR <br><span>ALL HOME SERVICES</span></h1>
+                <p>Ab har ghar ki samasya hogi khatam! Servixa Home laya hai expert technicians aapke doorstep par Navi Mumbai mein.</p>
                 <div class="hero-btns">
-                    <a href="tel:8779694303" class="btn btn-gold">Instant Booking</a>
-                    <a href="https://wa.me/918779694303" class="btn btn-outline" style="border: 2px solid white; color: white;">WhatsApp Us</a>
+                    <a href="tel:8779694303" class="btn-gold large">Instant Booking</a>
+                    <a href="https://wa.me/918779694303" class="btn-outline">WhatsApp Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat-item"><h3>1000+</h3><p>Happy Clients</p></div>
-            <div class="stat-item"><h3>15+</h3><p>Expert Technicians</p></div>
-            <div class="stat-item"><h3>60 Min</h3><p>Arrival Time</p></div>
-            <div class="stat-item"><h3>100%</h3><p>Quality Guarantee</p></div>
+    <section class="trust-bar">
+        <div class="container stats-flex">
+            <div class="stat-item"><i class="fas fa-check-circle"></i> 100% Satisfaction</div>
+            <div class="stat-item"><i class="fas fa-user-shield"></i> Verified Experts</div>
+            <div class="stat-item"><i class="fas fa-tools"></i> Genuine Spare Parts</div>
+            <div class="stat-item"><i class="fas fa-clock"></i> 60 Min Arrival</div>
         </div>
-    </div>
+    </section>
 
     <section id="services" class="section-padding">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Premium Solutions</h2>
-                <p style="color: #666; margin-top: -50px;">Expert care for your sweet home appliances and maintenance.</p>
+            <div class="section-head">
+                <span class="sub-title">Expert Solutions</span>
+                <h2>Our Professional Services</h2>
+                <div class="line"></div>
             </div>
             
-            <div class="services-detail-grid">
+            <div class="services-grid">
                 <div class="service-card">
                     <div class="s-icon"><i class="fas fa-snowflake"></i></div>
                     <h3>AC Repair & Service</h3>
-                    <p>Professional cooling solutions including split and window AC maintenance.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Deep Jet Cleaning</li>
-                        <li><i class="fas fa-check"></i> Gas Charging (R32/R410)</li>
-                        <li><i class="fas fa-check"></i> PCB Repair & Replace</li>
-                    </ul>
+                    <p>Split & Window AC installation, gas charging, and deep filter cleaning.</p>
+                    <a href="ac-repair.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
                 <div class="service-card">
                     <div class="s-icon"><i class="fas fa-sync-alt"></i></div>
                     <h3>Washing Machine</h3>
-                    <p>Repairing all brands of Front Load, Top Load, and Semi-Automatic machines.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Drum & Motor Repair</li>
-                        <li><i class="fas fa-check"></i> Sensor Replacement</li>
-                        <li><i class="fas fa-check"></i> Complete Servicing</li>
-                    </ul>
+                    <p>Expert repair for Top load, Front load & Semi-automatic machines.</p>
+                    <a href="washing-machine.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
                 <div class="service-card">
                     <div class="s-icon"><i class="fas fa-hammer"></i></div>
-                    <h3>Master Carpenter</h3>
-                    <p>Precision woodwork and furniture repair by our master craftsmen.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Furniture Assembly</li>
-                        <li><i class="fas fa-check"></i> Door & Lock Fixing</li>
-                        <li><i class="fas fa-check"></i> Modular Kitchen Work</li>
-                    </ul>
+                    <h3>Carpenter Service</h3>
+                    <p>Furniture repair, modular kitchen setup, and door lock installations.</p>
+                    <a href="carpenter.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
                 <div class="service-card">
                     <div class="s-icon"><i class="fas fa-faucet"></i></div>
-                    <h3>Plumbing Expert</h3>
-                    <p>Modern plumbing solutions for all types of leakages and new fittings.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Pipe Leakage Fixing</li>
-                        <li><i class="fas fa-check"></i> Sanitary Installation</li>
-                        <li><i class="fas fa-check"></i> Water Tank Cleaning</li>
-                    </ul>
+                    <h3>Plumbing Work</h3>
+                    <p>Fixing leakages, new tap fittings, and water tank cleaning services.</p>
+                    <a href="plumbing.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
                 <div class="service-card">
                     <div class="s-icon"><i class="fas fa-bolt"></i></div>
                     <h3>Electrician</h3>
-                    <p>Safe and certified electrical work for your home and office needs.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Full House Wiring</li>
-                        <li><i class="fas fa-check"></i> Short Circuit Detection</li>
-                        <li><i class="fas fa-check"></i> Appliance Setup</li>
-                    </ul>
+                    <p>Complete house wiring, short circuit fixes, and appliance setup.</p>
+                    <a href="electrician.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-
                 <div class="service-card">
-                    <div class="s-icon"><i class="fas fa-box-open"></i></div>
-                    <h3>Fridge & Microwave</h3>
-                    <p>Instant repair for cooling issues and heating problems in appliances.</p>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Refrigerator Gas Fill</li>
-                        <li><i class="fas fa-check"></i> Magnetron Replacement</li>
-                        <li><i class="fas fa-check"></i> Door Seal Fixing</li>
-                    </ul>
+                    <div class="s-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Other Appliances</h3>
+                    <p>Micro-oven, Refrigerator, and Geyser repair at best prices.</p>
+                    <a href="services.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="section-padding process">
+    <section class="about-detail section-padding">
+        <div class="container flex-about">
+            <div class="about-text">
+                <h2>Servixa Home - Your Trusted Partner in Navi Mumbai</h2>
+                <p>Kya aap Navi Mumbai mein ek bharosemand technician dhund rahe hain? Servixa Home aapki sabhi home maintenance problems ka ek akela solution hai. Hum Kopar Khairane, Vashi, Ghansoli, aur Airoli jaise sabhi areas mein apni services dete hain.</p>
+                <p>Hamare technicians background-checked hain aur 100% genuine parts ka istemal karte hain taaki aapka machine chale saalo saal.</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check"></i> 30 Days Service Warranty</li>
+                    <li><i class="fas fa-check"></i> Affordable & Transparent Pricing</li>
+                    <li><i class="fas fa-check"></i> 24/7 Customer Support</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="Logo.png" alt="Servixa Home Service Expertise" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section section-padding">
         <div class="container">
-            <div class="section-title"><h2>How It Works</h2></div>
-            <div class="process-grid">
-                <div class="process-item">
-                    <div class="step-num">1</div>
-                    <h4>Book Online/Call</h4>
-                    <p>Contact us via call or WhatsApp with your requirements.</p>
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Q: Servixa Home ki services Navi Mumbai mein kahan kahan hain?</h4>
+                    <p>A: Hum Kopar Khairane, Vashi, Ghansoli, Sanpada aur poore Navi Mumbai mein service dete hain.</p>
                 </div>
-                <div class="process-item">
-                    <div class="step-num">2</div>
-                    <h4>Expert Assign</h4>
-                    <p>We assign the best technician who reaches in 60 mins.</p>
-                </div>
-                <div class="process-item">
-                    <div class="step-num">3</div>
-                    <h4>Work Done</h4>
-                    <p>Professional repair with genuine parts and guarantee.</p>
-                </div>
-                <div class="process-item">
-                    <div class="step-num">4</div>
-                    <h4>Pay & Smile</h4>
-                    <p>Pay easily after full satisfaction of the service.</p>
+                <div class="faq-item">
+                    <h4>Q: Kya aap repair ke baad guarantee dete hain?</h4>
+                    <p>A: Haan, hum har repair par 30-day ki service warranty dete hain.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="brand-name" style="color:white; font-size: 32px;">SERVIX<span class="wrench-icon"><i class="fas fa-wrench"></i></span>A</div>
-                    <div class="brand-sub" style="color:var(--accent); border-top-color:white;">HOME</div>
-                    <p>Servixa Home is Mumbai's leading home service provider. We deliver excellence and trust with every visit.</p>
+                <div class="footer-col">
+                    <div class="brand-name white">SERVIX<span>X</span>A HOME</div>
+                    <p>One Call Solution for All Home Services.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Access</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#process">Work Flow</a></li>
-                        <li><a href="tel:8779694303">Book Appointment</a></li>
-                    </ul>
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <p>Kopar Khairane, Navi Mumbai, Maharashtra</p>
+                    <p>Email: support@servixahome.online</p>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Details</h4>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kopar Khairane, Navi Mumbai, Maharashtra</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>+91 8779694303</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>support@servixahome.online</span>
-                    </div>
-   
+            </div>
+            <div class="tagline-hindi">सेवा • सुरक्षा • समृद्धि</div>
+            <p class="copy-text">&copy; 2026 Servixa Home. All Rights Reserved. | <a href="sitemap.xml" style="color:var(--accent);">Sitemap</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
