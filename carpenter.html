@@ -1,30 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Carpenter Service</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carpenter Services in Navi Mumbai – Servixa Home</title>
+  <meta name="description" content="Professional carpenter services in Navi Mumbai. Furniture repair, door & window work, custom furniture. Call 8779694303." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .carp-hero {
+      background: linear-gradient(135deg, #7a5300 0%, var(--gold-dark) 50%, var(--gold) 100%);
+      padding: 100px 20px 50px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .carp-hero::before {
+      content: '🔨';
+      position: absolute;
+      font-size: 200px;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.08;
+      line-height: 1;
+    }
+    .carp-hero h1 { font-family: 'Rajdhani', sans-serif; font-size: clamp(30px,7vw,52px); font-weight: 700; margin-bottom: 12px; }
+    .carp-hero p { font-size: 15px; color: rgba(255,255,255,0.9); max-width: 500px; line-height: 1.7; margin-bottom: 24px; }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h2>Servixa Home</h2>
-</header>
-
-<section class="hero">
-<img src="images/carpenter.jpg" class="hero-img">
-
-<div class="hero-text">
-<h1>Carpenter Service</h1>
-<p>Furniture repair & wood work</p>
-<a href="booking.html" class="btn">Book Now</a>
+<div id="page-loader">
+  <div class="loader-logo">SERVI<span>XA</span> HOME</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
 
+<div class="contact-strip">
+  <a href="tel:8779694303">📞 8779694303 – Carpenter Expert</a>
+  <span>|</span>
+  <span>Same Day Service</span>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="Logo.png" alt="Servixa Home" onerror="this.style.display='none'" />
+    <div class="nav-logo-text">
+      <span class="brand">SERVIXA HOME</span>
+      <span class="tagline">Navi Mumbai</span>
+    </div>
+  </a>
+  <div class="nav-menu"><span></span><span></span><span></span></div>
+  <div class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="services.html" class="active">🛠️ Services</a>
+    <a href="reviews.html">⭐ Reviews</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="booking.html" class="nav-cta">📅 Book Now</a>
+  </div>
+</nav>
+
+<div class="carp-hero">
+  <span class="section-badge" style="margin-bottom:14px;display:inline-block;background:rgba(255,255,255,0.2);color:#fff">🔨 Carpenter Expert</span>
+  <h1>Carpenter Services<br/>in Navi Mumbai</h1>
+  <p>Expert carpenter for all woodwork needs – furniture repair, door & window work, custom furniture, modular kitchen & more. Quality work guaranteed.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <a href="booking.html" class="btn btn-lg" style="background:var(--primary);color:#fff">📅 Book Carpenter</a>
+    <a href="tel:8779694303" class="btn btn-white btn-lg">📞 Call Now</a>
+  </div>
+  <div class="breadcrumb" style="justify-content:flex-start;margin-top:24px">
+    <a href="index.html">Home</a><span>›</span>
+    <a href="services.html">Services</a><span>›</span>
+    <span style="color:rgba(255,255,255,0.7)">Carpenter</span>
+  </div>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-item"><span class="icon">✅</span> Skilled Carpenters</div>
+  <div class="trust-item"><span class="icon">⚡</span> Same Day Service</div>
+  <div class="trust-item"><span class="icon">🔒</span> Quality Guaranteed</div>
+  <div class="trust-item"><span class="icon">💰</span> Starting ₹199</div>
+</div>
+
+<!-- Services -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-badge">What We Do</span>
+      <h2 class="section-title">Carpenter <span>Services</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="grid-3">
+      <div class="card fade-in" style="border-top:4px solid var(--gold)">
+        <div class="card-icon gold">🪑</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Furniture Repair</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Chair, table, wardrobe, bookshelf repair. Broken joints, hinges, handles & polish work.</p>
+        <div class="price-badge">Starting ₹199</div>
+      </div>
+      <div class="card fade-in" style="border-top:4px solid var(--primary)">
+        <div class="card-icon">🚪</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Door & Window Work</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Sticking doors, broken frames, new door fitting, window lock & hinge replacement.</p>
+        <div class="price-badge">Starting ₹299</div>
+      </div>
+      <div class="card fade-in" style="border-top:4px solid var(--success)">
+        <div class="card-icon" style="background:linear-gradient(135deg,#16a34a,#22c55e)">🛏️</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Bed & Sofa Repair</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Broken bed frame, squeaky joints, sofa leg repair, storage drawer fix.</p>
+        <div class="price-badge">Starting ₹399</div>
+      </div>
+      <div class="card fade-in" style="border-top:4px solid #8b5cf6">
+        <div class="card-icon" style="background:linear-gradient(135deg,#7c3aed,#8b5cf6)">🪵</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Custom Furniture</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Get any custom furniture made – shelves, study tables, TV units, storage solutions.</p>
+        <div class="price-badge">Quote on Visit</div>
+      </div>
+      <div class="card fade-in" style="border-top:4px solid #ef4444">
+        <div class="card-icon" style="background:linear-gradient(135deg,#dc2626,#ef4444)">🍳</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Modular Kitchen</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Kitchen cabinet installation, repair & modification. Hinge, handle & shutter work.</p>
+        <div class="price-badge">Quote on Visit</div>
+      </div>
+      <div class="card fade-in" style="border-top:4px solid var(--gold-dark)">
+        <div class="card-icon gold">🔩</div>
+        <h4 style="font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">Locks & Hardware</h4>
+        <p style="font-size:13px;color:var(--text-light);margin-bottom:14px">Lock installation, hinge replacement, door stopper fitting & all hardware work.</p>
+        <div class="price-badge">Starting ₹199</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-badge">Our Promise</span>
+      <h2 class="section-title">Why Our <span>Carpenters?</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="grid-2">
+      <div class="card fade-in">
+        <ul class="feature-list">
+          <li>Experienced & skilled carpenters</li>
+          <li>Quality tools & premium materials</li>
+          <li>Clean & tidy work – no mess left behind</li>
+          <li>On-time arrival – always punctual</li>
+        </ul>
+      </div>
+      <div class="card fade-in">
+        <ul class="feature-list">
+          <li>Honest pricing – no hidden costs</li>
+          <li>Work warranty provided</li>
+          <li>Same day service available</li>
+          <li>Serving all Navi Mumbai areas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-badge">How It Works</span>
+      <h2 class="section-title">Booking <span>Process</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-in"><div class="step-num">1</div><div class="step-content"><h4>📞 Call or Book Online</h4><p>Tell us what carpentry work you need. We'll schedule a visit at your convenience.</p></div></div>
+      <div class="process-step fade-in"><div class="step-num">2</div><div class="step-content"><h4>🔍 Free Inspection & Quote</h4><p>Our carpenter visits, inspects the work, and gives you a transparent price quote.</p></div></div>
+      <div class="process-step fade-in"><div class="step-num">3</div><div class="step-content"><h4>🔨 Work Done</h4><p>After your approval, work begins. Clean, professional execution using quality materials.</p></div></div>
+      <div class="process-step fade-in"><div class="step-num">4</div><div class="step-content"><h4>✅ Quality Check & Payment</h4><p>Work is inspected together. Pay only when you're 100% satisfied with the result.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(135deg,#7a5300,var(--gold-dark));padding:50px 20px;text-align:center">
+  <h2 style="font-family:'Rajdhani',sans-serif;font-size:clamp(24px,5vw,36px);color:#fff;font-weight:700;margin-bottom:12px">Need a Carpenter Today?</h2>
+  <p style="color:rgba(255,255,255,0.9);margin-bottom:24px">Book online or call us for same day carpenter service!</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a href="booking.html" class="btn btn-lg" style="background:var(--primary);color:#fff">📅 Book Carpenter</a>
+    <a href="tel:8779694303" class="btn btn-white btn-lg">📞 8779694303</a>
+  </div>
 </section>
 
 <footer>
-<p>📞 8779694303</p>
+  <div class="container footer-grid">
+    <div class="footer-brand"><h3>SERVIXA HOME</h3><p class="hindi-tagline">सेवा • सुरक्षा • समृद्धि</p><p>Skilled carpenter services in Navi Mumbai.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="ac-repair.html">❄️ AC Repair</a></li>
+      <li><a href="washing-machine.html">🫧 Washing Machine</a></li>
+      <li><a href="carpenter.html">🔨 Carpenter</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:8779694303">8779694303</a></div>
+      <div class="footer-contact-item"><span class="icon">📍</span><span>Kopar Khairane, Navi Mumbai</span></div>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© 2025 Servixa Home. All Rights Reserved.</span></div>
 </footer>
 
+<a href="https://wa.me/918779694303?text=Hi! I need carpenter service." target="_blank" class="whatsapp-float">💬</a>
+<a href="tel:8779694303" class="call-float">📞</a>
+<div class="back-top">↑</div>
+<script src="script.js"></script>
 </body>
 </html>
